@@ -99,9 +99,7 @@ def main_fuc(image):
 try:
   img2 = img.resize((600,450), Image.ANTIALIAS)
   prob = main_fuc(np.array(img2))[0][0]
-  #st.error(prob)
-except Exception as e:
-  st.error(e)
+except:
   prob = -1
 
 if(prob>0.5):
