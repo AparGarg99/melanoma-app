@@ -187,7 +187,7 @@ pdf.output("Report.pdf")
 def verify_email(email_id):
   try:
     # https://hunter.io/api-keys
-    API_KEY = '082d8e90640d6fcf7141b75c03177a84bed2b700'
+    API_KEY = st.secrets["API_KEY"]
     id = email_id
     response = requests.get("https://api.hunter.io/v2/email-verifier?email={}&api_key={}".format(id,API_KEY))
     resp = response.json()['data']
