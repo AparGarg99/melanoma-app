@@ -227,8 +227,8 @@ def send_mail():
     email_list = verify_error_msgs(check1,check2)
 
     if(email_list!=[]):
-      EMAIL_ADDRESS = 'melanomareportgroup10@gmail.com' #"apargarg99@gmail.com"
-      EMAIL_PASSWORD = 'q1w2d3f4'  #"warmachineroX@1264"
+      EMAIL_ADDRESS = 'melanomareportgroup10@gmail.com' 
+      EMAIL_PASSWORD = 'q1w2d3f4' 
 
       msg = EmailMessage()
       msg['Subject'] = 'Skin Cancer Report'
