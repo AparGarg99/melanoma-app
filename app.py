@@ -193,7 +193,7 @@ pdf.output("Report.pdf")
 def verify_email(email_id):
   try:
     # https://hunter.io/api-keys
-    API_KEY = '082d8e90640d6fcf7141b75c03177a84bed2b700'
+    API_KEY = st.secrets["API_KEY"]
     id = email_id
     response = requests.get("https://api.hunter.io/v2/email-verifier?email={}&api_key={}".format(id,API_KEY))
     resp = response.json()['data']
@@ -233,8 +233,8 @@ def send_mail():
     email_list = verify_error_msgs(check1,check2)
 
     if(email_list!=[]):
-      EMAIL_ADDRESS = 'melanomareportgroup10@gmail.com' 
-      EMAIL_PASSWORD = 'q1w2d3f4'  
+      EMAIL_ADDRESS = st.secrets["EMAIL_ADDRESS"]
+      EMAIL_PASSWORD = st.secrets["EMAIL_PASSWORD"] 
 
       msg = EmailMessage()
       msg['Subject'] = 'Skin Cancer Report'
