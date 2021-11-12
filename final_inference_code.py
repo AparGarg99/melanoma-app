@@ -1,11 +1,3 @@
-import numpy as np
-import os
-import cv2
-from tensorflow.keras.models import Model, load_model
-from scipy import ndimage
-import math
-from skimage.measure import label, regionprops, regionprops_table
-from skimage.transform import resize
 
 """# Define UNET Model """
 
