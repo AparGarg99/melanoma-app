@@ -1,28 +1,9 @@
 import numpy as np
-#import tensorflow as tf
 import os
-#import sys
 import cv2
-#import skimage.io as io
-#from tensorflow.keras.layers import Dense,GlobalAveragePooling2D,Input,Dropout,Conv2D,BatchNormalization
-#from tensorflow.keras.layers import Conv2DTranspose,concatenate,MaxPooling2D,Activation,Flatten,Reshape
 from tensorflow.keras.models import Model, load_model
-#from tensorflow.keras.optimizers import SGD,Adam
-#import tensorflow_addons as tfa
-#from tensorflow.keras.callbacks import CSVLogger
-#from tensorflow.keras import regularizers
-#import pandas as pd
-#import matplotlib.pyplot as plt
-#from tensorflow.keras.utils import plot_model
-#from collections import Counter
-#from glob import glob
-#from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
-#from tensorflow.keras.utils import Sequence
 from scipy import ndimage
 import math
-#import imageio
-#from PIL import Image
-#from skimage.io import imread,imshow
 from skimage.measure import label, regionprops, regionprops_table
 from skimage.transform import resize
 
